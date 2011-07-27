@@ -1,8 +1,9 @@
-From d8e727b6fee6715994f31be5de1d7815b6a7faf1 Mon Sep 17 00:00:00 2001
+From b6ac5d1e01bf35aad1877c082373b9537be3d7d0 Mon Sep 17 00:00:00 2001
 From: Philip Balister <balister@moose.(none)>
 Date: Mon, 3 May 2010 15:13:47 -0400
 Subject: [PATCH 3/5] Add defconfig to save working kernel .config.
 
+Signed-off-by: Philip Balister <philip@opensdr.com>
 ---
  defconfig | 2818 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
  1 files changed, 2818 insertions(+), 0 deletions(-)
@@ -10,7 +11,7 @@ Subject: [PATCH 3/5] Add defconfig to save working kernel .config.
 
 diff --git a/defconfig b/defconfig
 new file mode 100644
-index 0000000..9ee26a2
+index 0000000..7e3ad16
 --- /dev/null
 +++ b/defconfig
 @@ -0,0 +1,2818 @@
@@ -95,7 +96,7 @@ index 0000000..9ee26a2
 +# CONFIG_TREE_RCU_TRACE is not set
 +CONFIG_IKCONFIG=y
 +CONFIG_IKCONFIG_PROC=y
-+CONFIG_LOG_BUF_SHIFT=15
++CONFIG_LOG_BUF_SHIFT=16
 +# CONFIG_CGROUPS is not set
 +# CONFIG_NAMESPACES is not set
 +# CONFIG_SCHED_AUTOGROUP is not set
@@ -2594,7 +2595,7 @@ index 0000000..9ee26a2
 +#
 +# Kernel hacking
 +#
-+# CONFIG_PRINTK_TIME is not set
++CONFIG_PRINTK_TIME=y
 +CONFIG_ENABLE_WARN_DEPRECATED=y
 +CONFIG_ENABLE_MUST_CHECK=y
 +CONFIG_FRAME_WARN=1024
@@ -2833,5 +2834,5 @@ index 0000000..9ee26a2
 +CONFIG_NLATTR=y
 +CONFIG_AVERAGE=y
 -- 
-1.7.3.4
+1.7.4.4
 
