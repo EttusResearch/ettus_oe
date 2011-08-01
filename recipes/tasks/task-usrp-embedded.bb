@@ -1,6 +1,6 @@
 DESCRIPTION = "Base software to install on USRP Embedded"
 
-PR = "r5"
+PR = "r6"
 
 inherit task
 
@@ -11,8 +11,10 @@ RDEPENDS_${PN} = "\
   htop \
   powertop \
   task-native-gnuradio-sdk \
+  orc \
   python-lxml \
   python-subprocess \
+  python-ctypes \
   gdb \
   uhd \
   uhd-dev \
