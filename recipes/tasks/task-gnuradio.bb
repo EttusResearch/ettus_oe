@@ -1,6 +1,6 @@
 DESCRIPTION = "Base software to install GNU Radio"
 
-PR = "r3"
+PR = "r4"
 
 inherit task
 
