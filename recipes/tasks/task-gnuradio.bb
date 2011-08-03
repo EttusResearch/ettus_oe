@@ -6,6 +6,6 @@ inherit task
 
 RDEPENDS_${PN} = "\
   gnuradio \
-  gnuradio-dev \
+#  gnuradio-dev \
   gnuradio-examples \
 "
