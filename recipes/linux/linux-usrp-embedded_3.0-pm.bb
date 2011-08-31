@@ -10,7 +10,7 @@ FILESPATHPKG_prepend = "linux-usrp-embedded-3.0-pm:"
 PV = "3.0-pm"
 MACHINE_KERNEL_PR_append = "a"
 
-SRCREV = "b64c340026c567c911c566c028d91b2bb7569340"
+SRCREV = "0b7e5a3b036013d4b1b9e183df40c7fbd8d51944"
 SRC_URI = "git://www.sakoman.com/git/linux-omap-2.6.git;branch=omap-3.0-pm;protocol=git \
 	file://0001-Add-defines-to-set-config-options-in-GPMC-per-CS-con.patch \
 	file://0002-Add-functions-to-dma.c-to-set-address-and-length-for.patch \
