@@ -26,6 +26,7 @@ IMAGE_INSTALL += " \
   task-base-extended \
   ${IMAGE_SPLASH} \
   angstrom-task-gnome \
+  setxkbmap \
   task-gnome-apps \
   task-proper-tools \
   task-usrp-embedded \
