@@ -4,7 +4,7 @@ inherit image
 
 DISTRO_SSH_DAEMON = "openssh"
 
-PR = "r1"
+PR = "r2"
 
 XSERVER ?= "xserver-xorg \
            xf86-input-evdev \
@@ -32,5 +32,12 @@ IMAGE_INSTALL += " \
   task-proper-tools \
   task-usrp-embedded \
   task-gnuradio \
+  qmake2 \
+  qt4-tools \
+  qt4-x11-free-dev \
+  qt4-mkspecs \
+  qwt \
+  qwt-dev \
+  qwt-examples \
 "
 
