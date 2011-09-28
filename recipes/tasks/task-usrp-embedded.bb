@@ -1,10 +1,11 @@
 DESCRIPTION = "Base software to install on USRP Embedded"
 
-PR = "r7"
+PR = "r8"
 
 inherit task
 
 RDEPENDS_${PN} = "\
+  cpufrequtils \
   ethtool \
   kernel-modules \
   oprofile \
