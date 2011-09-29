@@ -7,14 +7,14 @@ LICENSE = "GPLv3"
 # THE PV is basically wrong at this point. We use PR to make this package
 # install instead of a firmware package built from a release.
 
-PR = "r51"
+PR = "r53"
 PV = "003.003.000"
 
 PACKAGE_ARCH = "all"
 
-SRC_URI = "http://www.ettus.com/downloads/uhd_releases/master_images/UHD-images-${PV}-de25eec.tar.gz"
+SRC_URI = "http://files.ettus.com/uhd_releases/master_images/UHD-images-003.003.000-1b57797.tar.gz"
 
-S = ${WORKDIR}/UHD-images-${PV}
+S = ${WORKDIR}/UHD-images-003.003.000-1b57797
 
 do_install() {
 	install -d ${D}${datadir}/uhd/images
@@ -27,6 +27,6 @@ do_install() {
 PACKAGES = "${PN}"
 FILES_${PN} = ${datadir}/uhd/images
 
-SRC_URI[md5sum] = "21fc2a19e89e6bcc26c6dbf6607583f9"
-SRC_URI[sha256sum] = "f234cad7541c7ea34b6975d5d5c44285e5df9f40ab74ee9cb9aa2623663b28c1"
+SRC_URI[md5sum] = "4b0b885f1c44626813381c21d9e222c1"
+SRC_URI[sha256sum] = "af3f382e57dabbf5ce5937635626248d50a5d4ed3f0881ac461f90cee8080aa3"
 
