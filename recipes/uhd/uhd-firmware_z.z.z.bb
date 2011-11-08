@@ -2,6 +2,8 @@ DESCRIPTION = "Universal Hardware Driver Firmware"
 HOMEPAGE = "http://www.ettus.com"
 LICENSE = "GPLv3"
 
+DEFAULT_PREFERENCE = "-1"
+
 # This recipe sucks. It exists only to create images when Josh won't create
 # a tag.
 # THE PV is basically wrong at this point. We use PR to make this package
