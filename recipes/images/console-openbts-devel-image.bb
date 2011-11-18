@@ -1,5 +1,7 @@
 require recipes/images/console-base-image.bb
 
+PR="r1"
+
 DISTRO_SSH_DAEMON = "openssh"
 
 DEPENDS += "task-base-extended \
@@ -12,6 +14,7 @@ IMAGE_INSTALL += " \
   libosip2-dev \
   ortp-dev \
   asterisk \
+  sqlite3 \
 "
 
 
