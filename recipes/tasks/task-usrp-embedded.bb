@@ -1,6 +1,6 @@
 DESCRIPTION = "Base software to install on USRP Embedded"
 
-PR = "r9"
+PR = "r10"
 
 inherit task
 
@@ -25,4 +25,5 @@ RDEPENDS_${PN} = "\
   uhd-tests \
   uhd-e1xx \
   vim-vimrc \
+  sudo \
 "
