@@ -42,5 +42,7 @@ IMAGE_INSTALL += " \
   gnuradio-grc \
   gnuradio-conf \
   gnuradio-examples \
+  ti-dsplink \
+  ti-dsplink-examples \
 "
 
