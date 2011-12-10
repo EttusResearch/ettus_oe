@@ -1,6 +1,6 @@
 require recipes/images/console-base-image.bb
 
-PR="r1"
+PR="r2"
 
 DISTRO_SSH_DAEMON = "openssh"
 
@@ -15,6 +15,7 @@ IMAGE_INSTALL += " \
   ortp-dev \
   asterisk \
   sqlite3 \
+  subversion \
 "
 
 
