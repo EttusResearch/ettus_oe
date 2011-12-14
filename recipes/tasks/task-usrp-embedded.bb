@@ -1,6 +1,6 @@
 DESCRIPTION = "Base software to install on USRP Embedded"
 
-PR = "r10"
+PR = "r11"
 
 inherit task
 
@@ -18,6 +18,7 @@ RDEPENDS_${PN} = "\
   python-lxml \
   python-subprocess \
   python-ctypes \
+  python-xmlrpc \
   gdb \
   uhd \
   uhd-dev \
