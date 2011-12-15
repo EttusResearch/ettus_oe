@@ -7,7 +7,7 @@ SRC_URI_append_usrp-e1xx ="\
         file://0002-OMAP3-overo-Set-default-mpurate-to-720-use-for-usrp-.patch \
         "
 
-SRCREV = "7708d8b352e9e595f6f08afd3206af6495c7dc09"
+SRCREV = "06e42c6e2ce269667daecd6229d0b7c813838203"
 
 S = "${WORKDIR}/git"
 
