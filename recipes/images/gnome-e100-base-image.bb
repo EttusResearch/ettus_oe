@@ -50,7 +50,6 @@ IMAGE_INSTALL += " \
   orc-dev \
   python-modules \
   python-lxml \
-  python-xmlrpc \
   gdb \
   vim-vimrc \
   sudo \
