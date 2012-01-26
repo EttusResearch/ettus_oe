@@ -15,6 +15,7 @@ RDEPENDS_${PN} = "\
   powertop \
   task-native-gnuradio-sdk \
   orc \
+  orc-dev \
   python-lxml \
   python-subprocess \
   python-ctypes \
