@@ -47,9 +47,10 @@ IMAGE_INSTALL += " \
   powertop \
   task-native-gnuradio-sdk \
   orc \
+  orc-dev \
+  python-modules \
   python-lxml \
-  python-subprocess \
-  python-ctypes \
+  python-xmlrpc \
   gdb \
   vim-vimrc \
   sudo \
