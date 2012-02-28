@@ -1,10 +1,12 @@
 DESCRIPTION = "Image based on the GNOME desktop"
 
+require e100-image.inc
+
 inherit image
 
 DISTRO_SSH_DAEMON = "openssh"
 
-PR = "r2"
+PR = "r3"
 
 XSERVER ?= "xserver-xorg \
            xf86-input-evdev \
@@ -31,13 +33,9 @@ IMAGE_INSTALL += " \
   task-gnome-apps \
   task-proper-tools \
   task-usrp-embedded \
-  task-gnuradio \
-  qmake2 \
-  qt4-tools \
-  qt4-x11-free-dev \
-  qt4-mkspecs \
-  qwt \
-  qwt-dev \
-  qwt-examples \
+  ${E100_QT} \
+  ${E100_TI_DSP} \
+  ${E100_UHD} \
+  ${E100_GNURADIO} \
 "
 
