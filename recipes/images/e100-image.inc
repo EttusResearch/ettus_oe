@@ -1,7 +1,9 @@
 # Define some variables for e100 software groups. Avoiding tasks since
 # users may want to uninstall without falling over tasks.
-# task-usrp-embedded has all teh stuff that I suspect users will not update
+# task-usrp-embedded has all the stuff that I suspect users will not update
 # from source
+
+INC_PR = "r0"
 
 E100_QT = "\
   qmake2 \
@@ -38,4 +40,11 @@ E100_GNURADIO ="\
   gnuradio-examples \
 "
 
+E100_OPENBTS ="\
+  libosip2 \
+  ortp-dev \
+  asterisk \
+  sqlite3 \
+  subversion \
+"
 
