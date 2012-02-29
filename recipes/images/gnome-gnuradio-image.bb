@@ -6,7 +6,7 @@ inherit image
 
 DISTRO_SSH_DAEMON = "openssh"
 
-PR = "r3"
+PR = "${INC_PR}.0"
 
 XSERVER ?= "xserver-xorg \
            xf86-input-evdev \
@@ -37,5 +37,6 @@ IMAGE_INSTALL += " \
   ${E100_TI_DSP} \
   ${E100_UHD} \
   ${E100_GNURADIO} \
+  ${E100_OPENBTS} \
 "
 
