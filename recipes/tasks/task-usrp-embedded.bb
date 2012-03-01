@@ -1,6 +1,6 @@
 DESCRIPTION = "Base software to install on USRP Embedded"
 
-PR = "r14"
+PR = "r15"
 
 inherit task
 
@@ -22,4 +22,8 @@ RDEPENDS_${PN} = "\
   sshfs-fuse \
   fuse \
   fuse-utils \
+  openssh-sftp \
+  openssh-sftp-server \
+#  python-pyserial \
+#  python-setuptools \
 "
