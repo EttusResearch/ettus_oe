@@ -18,4 +18,5 @@ RDEPENDS_${PN} += " \
     python-numpy-dev \
     boost-dev \
     gsl-dev \
+    orc \
 "
