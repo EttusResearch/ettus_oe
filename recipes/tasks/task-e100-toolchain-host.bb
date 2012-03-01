@@ -1,4 +1,4 @@
-DESCRIPTION = "Host packages for GNU Radio SDK"
+DESCRIPTION = "Host packages for E100 SDK"
 LICENSE = "MIT"
 ALLOW_EMPTY = "1"
 

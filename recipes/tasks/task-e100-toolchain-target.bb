@@ -1,4 +1,4 @@
-DESCRIPTION = "Target packages for GNURadio SDK"
+DESCRIPTION = "Target packages for E100 SDK"
 LICENSE = "MIT"
 ALLOW_EMPTY = "1"
 
@@ -6,43 +6,7 @@ DEPENDS = "task-sdk-bare"
 
 RDEPENDS_${PN} += " \
     task-sdk-bare \
-    glibc \
-    virtual-libc-dev \
-    libgcc \
-    alsa-dev \
-    audiofile-dev \
-    bluez-libs-dev \
-    dbus-dev \
-    expat-dev \
-    glib-2.0-dev \
-    libice-dev \
-    jpeg-dev \
-    libapm-dev \
-    alsa-lib-dev \
-    libetpan-dev \
-    libgcrypt-dev \
-    gnutls-dev \
-    libidl-dev \
-    libiw-dev \
-    libmimedir-dev \
-    libpcap-dev \
-    libpng-dev \
-    libschedule-dev \
-    libsm-dev \
-    libsoundgen-dev \
-    libsoup-dev \
-    libsvg-dev \
-    libtododb-dev \
-    libts-dev \
-    libxml2-dev \
-    ncurses-dev \
-    popt-dev \
-    readline-dev \
-    zlib-dev \
-    ${GNURADIO_PKGS} \
-"
-
-GNURADIO_PKGS = " \
+    task-sdk-base \
     libusb1-dev \
     guile-dev \
     fftwf-dev \
