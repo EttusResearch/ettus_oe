@@ -23,3 +23,12 @@ SRC_URI = "git://www.sakoman.com/git/linux-omap-2.6.git;branch=omap-3.0-pm;proto
 
 S = "${WORKDIR}/git"
 
+pkg_postinst_kernel-image () {
+
+if test "x$D" != "x"; then
+	exit 1
+elif test -d /media/FAT; then
+	cp /${KERNEL_IMAGEDEST}/${KERNEL_IMAGETYPE}-${KERNEL_VERSION} /media/FAT/uImage
+fi
+
+}
