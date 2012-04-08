@@ -24,6 +24,4 @@ RDEPENDS_${PN} = "\
   fuse-utils \
   openssh-sftp \
   openssh-sftp-server \
-#  python-pyserial \
-#  python-setuptools \
 "
