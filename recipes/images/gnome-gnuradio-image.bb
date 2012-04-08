@@ -38,5 +38,7 @@ IMAGE_INSTALL += " \
   ${E100_UHD} \
   ${E100_GNURADIO} \
   ${E100_OPENBTS} \
+  python-pyserial \
+  python-setuptools \
 "
 
