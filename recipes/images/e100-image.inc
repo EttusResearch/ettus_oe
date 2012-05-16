@@ -41,7 +41,7 @@ E100_GNURADIO ="\
 "
 
 E100_OPENBTS ="\
-  libosip2 \
+  libosip2-dev \
   ortp-dev \
   asterisk \
   sqlite3 \
