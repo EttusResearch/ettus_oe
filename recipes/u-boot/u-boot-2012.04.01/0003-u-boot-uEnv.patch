@@ -1,0 +1,54 @@
+--- a/include/configs/omap3_overo.h	2012-05-22 14:54:47.729236542 -0700
++++ b/include/configs/omap3_overo.h	2012-05-22 14:56:10.428243603 -0700
+@@ -19,7 +19,6 @@
+ 
+ #ifndef __CONFIG_H
+ #define __CONFIG_H
+-
+ /*
+  * High Level Configuration Options
+  */
+@@ -181,9 +180,9 @@
+ 		"omapdss.def_disp=${defaultdisplay} " \
+ 		"root=${nandroot} " \
+ 		"rootfstype=${nandrootfstype}\0" \
+-	"loadbootscript=fatload mmc ${mmcdev} ${loadaddr} boot.scr\0" \
+-	"bootscript=echo Running bootscript from mmc ...; " \
+-		"source ${loadaddr}\0" \
++	"loadbootenv=fatload mmc ${mmcdev} ${loadaddr} uEnv.txt\0" \
++	"importbootenv=echo Importing Environment from mmc ...; " \
++		"env import -t $loadaddr $filesize\0" \
+ 	"loaduimage=fatload mmc ${mmcdev} ${loadaddr} uImage\0" \
+ 	"mmcboot=echo Booting from mmc ...; " \
+ 		"run mmcargs; " \
+@@ -195,15 +194,21 @@
+ 
+ #define CONFIG_BOOTCOMMAND \
+ 	"if mmc rescan ${mmcdev}; then " \
+-		"if run loadbootscript; then " \
+-			"run bootscript; " \
+-		"else " \
+-			"if run loaduimage; then " \
+-				"run mmcboot; " \
+-			"else run nandboot; " \
+-			"fi; " \
+-		"fi; " \
+-	"else run nandboot; fi"
++                "echo SD/MMC found on device ${mmcdev};" \
++	        "if run loadbootenv; then " \
++			"echo Running importbootenv ...;" \
++                        "run importbootenv;" \
++                "fi;" \
++                "if test -n $uenvcmd; then " \
++                          "echo Running uenvcmd ...;" \
++                          "run uenvcmd;" \
++                "fi;" \
++                "if run loaduimage; then " \
++                        "echo Running mmcboot ...;" \
++                        "run mmcboot;" \
++                "fi;" \
++        "fi;" \
++        "run nandboot;" \
+ 
+ #define CONFIG_AUTO_COMPLETE	1
+ /*
