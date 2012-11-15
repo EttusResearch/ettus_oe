@@ -3,7 +3,7 @@
 # task-usrp-embedded has all the stuff that I suspect users will not update
 # from source
 
-INC_PR = "r0"
+INC_PR = "r1"
 
 E100_QT = "\
   qmake2 \
@@ -30,7 +30,6 @@ E100_UHD ="\
   uhd-dev \
   uhd-examples \
   uhd-tests \
-  uhd-e1xx \
 "
 
 E100_GNURADIO ="\
